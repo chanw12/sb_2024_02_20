@@ -169,6 +169,8 @@ locals {
 yum install docker -y
 yum install python -y
 yum install socat -y
+yum install pip -y
+pip install requests
 systemctl enable docker
 systemctl start docker
 
