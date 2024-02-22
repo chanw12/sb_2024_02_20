@@ -3,12 +3,16 @@ server:
   # 스프링부트가 종료 요청을 받았을때 현재 본인이 하던 일(요청에 대한 응답, 배치작업)을 전부 마친 후 종료 되도록 설정
   shutdown: graceful
 spring:
+  autoconfigure:
+    exclude:
   lifecycle:
     #스프링부트가 종료요청을 받은 후 기다려줄 수 있는 최대한의 시간
     timeout-per-shutdown-phase: 1h
   data:
     redis:
       host: 172.17.0.1
+      port: 6379
+      password: ON_SECRET
   datasource:
     url: jdbc:mysql://172.17.0.1:3306/sb_2024_02_20_prod
     username: root
