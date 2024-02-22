@@ -6,3 +6,9 @@ spring:
   lifecycle:
     #스프링부트가 종료요청을 받은 후 기다려줄 수 있는 최대한의 시간
     timeout-per-shutdown-phase: 1h
+  data:
+    redis:
+      host: 172.17.0.1
+  datasource:
+    url: jdbc:mysql://172.17.0.1:3306/sb_2024_02_20_prod
+
