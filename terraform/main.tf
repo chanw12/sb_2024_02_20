@@ -167,6 +167,8 @@ locals {
   ec2_user_data_base = <<-END_OF_FILE
 #!/bin/bash
 yum install docker -y
+yum install python -y
+yum install socat -y
 systemctl enable docker
 systemctl start docker
 
