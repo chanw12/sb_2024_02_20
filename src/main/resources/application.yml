@@ -25,3 +25,9 @@ spring:
     user:
       name: user1
       password: 1234
+
+custom:
+  temp:
+    dirPath: /Users/chanw12/Documents/temp
+  gen:
+    dirPath: /Users/chanw12/Documents/temp/sb_2024_02_20_dev/gen
